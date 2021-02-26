@@ -2,7 +2,6 @@ package dev.unfair.game;
 
 import dev.unfair.game.game.Level;
 import dev.unfair.game.scenes.Scene;
-import dev.unfair.game.scenes.SceneInGame;
 import dev.unfair.game.scenes.SceneLevelSelect;
 import processing.core.PApplet;
 
@@ -45,6 +44,12 @@ public class Platformio extends PApplet {
     @Override
     public void mouseClicked() {
         scene.mouseClicked(mouseX, mouseY, mouseButton);
+    }
+
+    @Override
+    public void keyPressed() {
+        System.out.println(keyCode);
+        scene.keyPressed(keyCode);
     }
 
     public static void main(String[] args) {

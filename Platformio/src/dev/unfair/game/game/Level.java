@@ -1,5 +1,6 @@
 package dev.unfair.game.game;
 
+import dev.unfair.game.objects.GameObject;
 import dev.unfair.game.utils.IoUtil;
 
 import java.io.File;
@@ -11,6 +12,7 @@ public class Level {
     private String levelName;
     private List<Block> ids = new ArrayList<>();
     private List<List<Block>> blocks = new ArrayList<>();
+    private List<GameObject> objects = new ArrayList<>();
 
     public Level(String levelName) {
         this.levelName = levelName;
@@ -63,4 +65,7 @@ public class Level {
         return blocks;
     }
 
+    public List<GameObject> getObjects() {
+        return objects;
+    }
 }

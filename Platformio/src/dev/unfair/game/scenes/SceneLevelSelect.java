@@ -45,4 +45,8 @@ public class SceneLevelSelect implements Scene {
         }
     }
 
+    @Override
+    public void keyPressed(int k) {
+    }
+
 }
